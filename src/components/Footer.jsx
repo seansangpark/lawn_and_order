@@ -4,8 +4,8 @@ import { TiSocialPinterest } from 'react-icons/ti';
 
 const Footer = () => {
   return (
-    <div className='w-full mt-24 bg-gray-900 text-gray-300 py-2 px-2'>
-      <div className='max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 px-4'>
+    <div className='absolute w-full mt-24 bg-gray-900 text-gray-300 py-2 px-2'>
+      {/* <div className='max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 px-4'>
         <div>
           <h6 className='font-bold uppercare pt-2'>Solutions</h6>
           <ul>
@@ -59,7 +59,7 @@ const Footer = () => {
             <button className='p-2 mb-4 rounded-md'>Subscribe</button>
           </form>
         </div>
-      </div>
+      </div> */}
 
       <div className='flex flex-col max-w-[1400px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500'>
         <p className='py-4'>
@@ -69,7 +69,6 @@ const Footer = () => {
           <FaFacebook />
           <FaInstagram />
           <FaTwitter />
-          <TiSocialPinterest size={30} />
         </div>
       </div>
     </div>

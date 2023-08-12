@@ -14,7 +14,7 @@ const App = () => {
       <Offers />
       <Plan />
       <Rooms />
-      <ImageSlider />
+      {/* <ImageSlider /> */}
       <Footer />
     </div>
   );

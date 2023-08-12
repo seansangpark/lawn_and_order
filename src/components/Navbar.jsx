@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div className='absolute w-full flex justify-between p-4 items-center'>
-      <h1 className='text-white font-bold text-5xl z-20'>Lawn and Order</h1>
+      <h1 className='text-white font-bold text-5xl z-20'>Lawn & Order</h1>
       <h1 className='text-white font-bold text-2xl z-20'>
         Veteran Owned & Homegrown here in San Antonio
       </h1>

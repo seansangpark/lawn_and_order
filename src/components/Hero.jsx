@@ -12,15 +12,17 @@ const Hero = () => {
       <div className='bg-black/30 absolute top-0 left-0 w-full h-screen' />
       <div className='absolute top-0 w-full h-full flex flex-col justify-center text-white'>
         <div className='md:left-[10%] max-w-[1100px] m-auto absolute p-4'>
-          <p>All inclusive</p>
+          <p className='py-4'>Special Lawn Care Unit</p>
           <h1 className='font-bold text-5xl md:text-7xl drop-shadow-2xl'>
-            Lawn & Landscaping Services
+            Lawn & Order
           </h1>
-          <p className='max-w-[600px] drop-shadow-2xl py-2 text-xl'>
-            Dolore quis magna commodo do consequat Lorem. Non quis aliquip
-            occaecat aliquip elit eiusmod consequat proident in. Voluptate do
+          <p className='max-w-[600px] drop-shadow-2xl py-4 text-xl'>
+            We're not your average lawn guys – we're true San Antonio locals and
+            proud U.S. veteran. Our roots run deep, just like our love for
+            making lawns look awesome. We get this city and its lawns like
+            nobody else. Let's team up and bring some order to your green space!
           </p>
-          <button className='bg-white text-black py-3'>Contact Now</button>
+          <button className='bg-white text-black py-4'>Contact Now</button>
         </div>
       </div>
     </div>
