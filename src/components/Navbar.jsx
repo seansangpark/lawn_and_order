@@ -14,13 +14,15 @@ const Navbar = () => {
 
   return (
     <div className='absolute w-full flex justify-between p-4 items-center'>
-      <h1 className='text-white font-bold text-2xl z-20'>Experiences</h1>
-      {console.log(nav)}
-      <HiMenuAlt3
+      <h1 className='text-white font-bold text-5xl z-20'>Lawn and Order</h1>
+      <h1 className='text-white font-bold text-2xl z-20'>
+        Veteran Owned & Homegrown here in San Antonio
+      </h1>
+      {/* <HiMenuAlt3
         onClick={handleNav}
         className='z-20 text-white cursor-pointer'
         size={25}
-      />
+      /> */}
       <div
         className={
           nav
