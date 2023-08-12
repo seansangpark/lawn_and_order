@@ -1,8 +1,8 @@
 import React from 'react';
 const yard_1 = require('../assets/yard-1.png');
-const veteran_1 = require('../assets/veteran-1.png');
 const yard_3 = require('../assets/yard-3.png');
 const yard_4 = require('../assets/yard-4.png');
+const veteran_1 = require('../assets/veteran-1.png');
 const veteran_2 = require('../assets/veteran-2.png');
 
 const Plan = () => {
