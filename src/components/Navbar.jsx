@@ -8,13 +8,14 @@ const Navbar = () => {
     if (!nav) {
       document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overlfow = 'scroll';
+      document.body.style.overflow = 'scroll';
     }
   };
 
   return (
     <div className='absolute w-full flex justify-between p-4 items-center'>
       <h1 className='text-white font-bold text-2xl z-20'>Experiences</h1>
+      {console.log(nav)}
       <HiMenuAlt3
         onClick={handleNav}
         className='z-20 text-white cursor-pointer'
