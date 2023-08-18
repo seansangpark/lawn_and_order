@@ -1,7 +1,17 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
+  const facebookUrl =
+    'https://www.facebook.com/people/Lawn-Order-Special-Lawn-Care-Unit/100095131762359/';
+  // Replace with your Instagram profile URL
+
+  const handleIconClick = (source) => {
+    if (source === 'facebook') {
+      window.open(facebookUrl, '_blank');
+    }
+  };
+
   return (
     <div className='absolute w-full mt-24 bg-gray-900 text-gray-300 py-2 px-2'>
       {/* <div className='max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 px-4'>
@@ -65,9 +75,16 @@ const Footer = () => {
           Copyright © 2023 Spark Design. All rights reserved
         </p>
         <div className='flex justify-between sm:w-[300px] pt-4 text-2xl'>
-          <FaFacebook />
-          <FaInstagram />
-          <FaTwitter />
+          <span></span>
+          <FaFacebook
+            style={{ cursor: 'pointer' }}
+            onClick={() => handleIconClick('facebook')}
+          />
+          <FaInstagram
+            style={{ cursor: 'pointer' }}
+            onClick={handleIconClick}
+          />
+          <span></span>
         </div>
       </div>
     </div>

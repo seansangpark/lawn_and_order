@@ -1,24 +1,33 @@
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
+import lawn_1 from '../assets/lawn-1.png';
+import lawn_2 from '../assets/lawn-2.png';
+import lawn_3 from '../assets/lawn-3.png';
+import lawn_4 from '../assets/lawn-4.png';
+import lawn_5 from '../assets/lawn-5.png';
 
 const ImageSlider = () => {
   const slides = [
     {
-      url: 'https://images.unsplash.com/photo-1464093515883-ec948246accb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2659&q=80',
-      title: 'Lobster',
+      src: lawn_3,
+      title: 'Lawn 3',
     },
     {
-      url: 'https://images.unsplash.com/photo-1512132411229-c30391241dd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-      title: 'Sushi',
+      src: lawn_2,
+      title: 'Lawn 2',
     },
     {
-      url: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-      title: 'Pasta',
+      src: lawn_1,
+      title: 'Lawn 1',
     },
     {
-      url: 'https://images.unsplash.com/photo-1539136788836-5699e78bfc75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-      title: 'Salmon',
+      src: lawn_4,
+      title: 'Lawn 4',
+    },
+    {
+      src: lawn_5,
+      title: 'Lawn 5',
     },
   ];
 
@@ -44,18 +53,20 @@ const ImageSlider = () => {
     <div className='max-w-[1400px] h-[580px] w-full m-auto py-16 px-4 relative group'>
       <div
         className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        style={{ backgroundImage: `url(${slides[currentIndex].src})` }}
       ></div>
       <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer'>
         <BsChevronCompactLeft
           onClick={prevSlide}
           size={30}
+          style={{ outline: 'none' }}
         />
       </div>
       <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer'>
         <BsChevronCompactRight
           onClick={nextSlide}
           size={30}
+          style={{ outline: 'none' }}
         />
       </div>
 

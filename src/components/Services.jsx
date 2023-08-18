@@ -1,22 +1,22 @@
 import React from 'react';
 const yard_1 = require('../assets/yard-1.png');
-const yard_3 = require('../assets/yard-3.png');
-const yard_4 = require('../assets/yard-4.png');
-const veteran_1 = require('../assets/veteran-1.png');
 const veteran_2 = require('../assets/veteran-2.png');
+const logo = require('../assets/logo.png');
+const lawn_9 = require('../assets/lawn-9.png');
+const lawn_10 = require('../assets/lawn-10.png');
 
-const Plan = () => {
+const Services = () => {
   return (
     <div className='max-w-[1400px] m-auto py-16 px-4 grid lg:grid-cols-2 gap-y-40'>
       {/* Left Side */}
       <div className='grid grid-cols-2 grid-rows-6 h-[80vh]'>
         <img
-          src={veteran_1}
-          alt='Lanscaping'
+          src={logo}
+          alt='Lawn & Order Logo'
           className='row-span-3 object-over w-full h-full p-2'
         />
         <img
-          src={yard_4}
+          src={lawn_9}
           alt='Lanscaping'
           className='row-span-2 object-over w-full h-full p-2'
         />
@@ -26,7 +26,7 @@ const Plan = () => {
           className='row-span-2 object-over w-full h-full p-2'
         />
         <img
-          src={yard_3}
+          src={lawn_10}
           alt='Lanscaping'
           className='row-span-3 object-over w-full h-full p-2'
         />
@@ -76,4 +76,4 @@ const Plan = () => {
   );
 };
 
-export default Plan;
+export default Services;

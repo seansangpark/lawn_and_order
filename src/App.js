@@ -1,8 +1,8 @@
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Offers from './components/Offers';
-import Plan from './components/Plan';
-import Rooms from './components/Rooms';
+import Services from './components/Services';
+import ContactUs from './components/ContactUs';
 import ImageSlider from './components/ImageSlider';
 import Footer from './components/Footer';
 
@@ -12,9 +12,9 @@ const App = () => {
       <Navbar />
       <Hero />
       <Offers />
-      <Plan />
-      <Rooms />
-      {/* <ImageSlider /> */}
+      <Services />
+      <ContactUs />
+      <ImageSlider />
       <Footer />
     </div>
   );

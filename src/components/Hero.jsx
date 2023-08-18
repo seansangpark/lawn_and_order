@@ -2,6 +2,12 @@ import React from 'react';
 const hero = require('../assets/hero-1.png');
 
 const Hero = () => {
+  const phoneNumber = '+1-210-727-4477';
+
+  const handleButtonClick = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   return (
     <div className='w-full h-screen'>
       <img
@@ -22,7 +28,12 @@ const Hero = () => {
             making lawns look awesome. We get this city and its lawns like
             nobody else. Let's team up and bring some order to your green space!
           </p>
-          <button className='bg-white text-black py-4'>Contact Now</button>
+          <button
+            className='bg-white text-black py-4'
+            onClick={handleButtonClick}
+          >
+            Call Us Now
+          </button>
         </div>
       </div>
     </div>
