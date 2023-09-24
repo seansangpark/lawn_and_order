@@ -20,7 +20,7 @@ const Hero = () => {
         <div className='md:left-[10%] max-w-[1100px] m-auto absolute p-4'>
           <p className='py-4'>Special Lawn Care Unit</p>
           <h1 className='font-bold text-5xl md:text-7xl drop-shadow-2xl'>
-            Lawn & Order
+            LAWN & ORDER
           </h1>
           <p className='max-w-[600px] drop-shadow-2xl py-4 text-xl'>
             We're not your average lawn guys – we're true San Antonio locals and
@@ -29,7 +29,7 @@ const Hero = () => {
             nobody else. Let's team up and bring some order to your green space!
           </p>
           <button
-            className='bg-white text-black py-4'
+            className='bg-white text-black py-3'
             onClick={handleButtonClick}
           >
             Call Us Now

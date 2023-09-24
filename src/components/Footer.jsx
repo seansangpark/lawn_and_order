@@ -4,11 +4,13 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 const Footer = () => {
   const facebookUrl =
     'https://www.facebook.com/people/Lawn-Order-Special-Lawn-Care-Unit/100095131762359/';
-  // Replace with your Instagram profile URL
+  const seansangparkUrl = 'https://seansangpark.com';
 
   const handleIconClick = (source) => {
     if (source === 'facebook') {
       window.open(facebookUrl, '_blank');
+    } else if (source === 'seansangpark') {
+      window.open(seansangparkUrl, '_blank');
     }
   };
 
@@ -71,7 +73,11 @@ const Footer = () => {
       </div> */}
 
       <div className='flex flex-col max-w-[1400px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500'>
-        <p className='py-4'>
+        <p
+          className='py-4'
+          style={{ cursor: 'pointer' }}
+          onClick={() => handleIconClick('seansangpark')}
+        >
           Copyright © 2023 Spark Design. All rights reserved
         </p>
         <div className='flex justify-between sm:w-[300px] pt-4 text-2xl'>
