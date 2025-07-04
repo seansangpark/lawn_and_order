@@ -78,7 +78,7 @@ const Footer = () => {
           style={{ cursor: 'pointer' }}
           onClick={() => handleIconClick('seansangpark')}
         >
-          Copyright © 2023 Spark Design. All rights reserved
+          Copyright © 2025 Spark Design. All rights reserved
         </p>
         <div className='flex justify-between sm:w-[300px] pt-4 text-2xl'>
           <span></span>
